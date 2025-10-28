@@ -2,7 +2,7 @@
   const translations = {
 		EN: {
 			bonus: "+ 100 Free spins",
-			btnRegistration: "JOIN NOW",
+			btnRegistration: "Join sale",
 			modalBonus: "+ 100 Free spins",
 			labelEmail: "Email*",
 			placeholderEmail: "Email",

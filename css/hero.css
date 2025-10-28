@@ -32,18 +32,42 @@
 }
 
 .title {
-	position: relative;
-	z-index: 10;
-	width: 342px;
-	height: 120px;
-	background: transparent;
-	background-image: url(../images/hero/title.webp);
-	opacity: 1;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center -80px;
-	overflow: hidden;
-	margin-bottom: 95px;
+	font-family: inherit;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 30px;
+	line-height: 96%;
+	text-align: center;
+	text-transform: uppercase;
+	background: radial-gradient(
+		56.41% 112.81% at 50% 0%,
+		#ff6b95 0%,
+		#e8353e 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Для Firefox */
+	background-clip: text;
+	color: transparent;
+	margin-bottom: 10px;
+}
+
+.text {
+	font-family: Stolzl;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 120%;
+	letter-spacing: 0%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 225px;
+}
+.subtext {
+	font-weight: 400;
 }
 
 .timer {
@@ -54,17 +78,20 @@
 	gap: 4px;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 10px;
 }
 
 .time-part {
-	font-family: "KodeMono";
+	font-family: "SpaceGrotesk";
 	font-weight: 700;
 	font-style: normal;
-	font-size: 58px;
+	font-size: 42px;
 	line-height: 120px;
 	color: var(--color-text);
+	font-feature-settings: "tnum";
+	font-variant-numeric: tabular-nums;
 }
-#hundredths {
+#seconds {
 	color: rgba(255, 107, 149, 1);
 }
 
@@ -73,61 +100,37 @@
 	height: 40px;
 }
 
-.focus {
-	width: 342px;
-	height: 90px;
-	margin-bottom: 18px;
-	background-image: url(../images/hero/focus_2.webp);
-	opacity: 1;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	animation: pulse 1.5s ease-in-out infinite;
-	transition: transform 0.2s;
+.text-discription {
+font-weight: 700;
+font-style: normal;
+font-size: 18px;
+line-height: 110%;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 
-.focus_text {
-	font-family: inherit;
-	font-weight: 700;
-	font-style: normal;
-	font-size: 34px;
-	line-height: 34px;
-	text-transform: uppercase;
-	color: transparent;
-	background: linear-gradient(
-		to bottom right,
-		rgba(255, 255, 255, 1),
-		rgba(81, 69, 117, 0.5)
+.text-discription-second {
+	font-weight: 400;
+}
+
+.text-discription-data {
+	background: radial-gradient(
+		56.41% 112.81% at 50% 0%,
+		#ff6b95 0%,
+		#e8353e 100%
 	);
 	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Для Firefox */
 	background-clip: text;
-	text-shadow: 0 0 1px white, 0 0 4px rgba(255, 255, 255, 0.8),
-		0 0 8px rgba(81, 69, 117, 0.5), 0 0 16px rgba(81, 69, 117, 0.6);
-	text-align: center;
-}
-
-@keyframes pulse {
-	0% {
-		transform: scale(1);
-	}
-	50% {
-		transform: scale(1.05);
-	}
-	100% {
-		transform: scale(1);
-	}
+	color: transparent;
 }
 
 @media screen and (min-width: 1024px) {
 	.title {
-		width: 618px;
-		height: 198px;
-		background-position: center -145px;
-		margin-bottom: 188px;
 	}
 	.timer {
 		width: 438px;

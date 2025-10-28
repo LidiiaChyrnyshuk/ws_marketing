@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link type="image/x-icon" rel="shortcut icon" href="./logo.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WEISS</title>
+		<script>
+			window.__REDIRECT_LINK = "%%redirect_to%%";
+		</script>
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+		<script type="module" src="./js/global-params-utils.js"></script>
+		<script type="module" src="./js/modal.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<section class="hero">
+				<div class="header">
+					<div class="header-logo">
+						<img src="./images/header/WS.svg" alt="logo" />
+					</div>
+					<div class="language-selector">
+						<button id="lang-btn">
+							<img
+								src="./images/header/language.svg"
+								alt="Globe"
+								class="icon language"
+							/>
+							<span class="current-lang" id="current-lang">EN</span>
+							<img
+								src="./images/header/arrow_drop_down.svg"
+								alt="Arrow"
+								class="icon arrow"
+							/>
+						</button>
+						<ul id="lang-dropdown" class="hidden">
+							<li data-lang="EN">EN</li>
+							<li data-lang="HU">HU</li>
+							<li data-lang="PT">PT</li>
+							<li data-lang="RU">RU</li>
+							<li data-lang="CZ">CZ</li>
+							<li data-lang="CA">CA</li>
+							<li data-lang="TR">TR</li>
+						</ul>
+					</div>
+				</div>
+				<div class="title"></div>
+				<div class="timer" id="countdown">
+					<div class="time-part" id="minutes">00</div>
+					<div class="colon"><img src="./images/hero/colon.png" alt="colon"/></div>
+					<div class="time-part" id="seconds">00</div>
+					<div class="colon"><img src="./images/hero/colon.png" alt="colon"/></div>
+					<div class="time-part" id="hundredths">00</div>
+				</div>
+				<button
+					class="button button-prime"
+					type="button"
+					data-translate="btnRegistration"
+					data-modal-open
+				>
+					JOIN NOW
+				</button>
+			</section>
+			<!--MODAL WINDOW-->
+			<div class="backdrop is-hidden" data-modal>
+				<form class="modal" id="registrationForm">
+					<div class="modal-header">
+						<div class="header-modal">
+							<img class="modal-logo" src="./images/header/WS.svg" alt="logo" />
+							<button class="modal-close" type="button" data-modal-close>
+								<img
+									class="icon-close"
+									src="./images/form/close.svg"
+									alt="close"
+									width="14"
+									height="14"
+								/>
+							</button>
+						</div>
+
+						<div>
+							<h2 class="modal-titel">
+								EXCLUSIVE<br />
+								BONUS
+							</h2>
+							<div class="modal-bonus-wrap">
+								<p class="modal-bonus" data-translate="modalBonus">
+									+100 Free spins
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-content">
+						<div class="email-wrap">
+							<label class="modal-label">
+								<span data-translate="labelEmail">Email*</span>
+								<input
+									class="modal-input email"
+									type="email"
+									name="email"
+									placeholder=""
+									data-translate-placeholder="placeholderEmail"
+									value=""
+									required
+								/>
+								<img
+									class="input-icon modal-icon"
+									src="./images/form/email.svg"
+									alt="Letter icon"
+									width="24"
+									height="24"
+								/>
+							</label>
+							<p class="error-text" data-translate="emailError">
+								Incorrect email format
+							</p>
+						</div>
+						<div class="password-wrap">
+							<label class="modal-label password-container">
+								<span data-translate="labelPassword">Password*</span>
+								<input
+									class="modal-input password"
+									type="password"
+									name="password"
+									placeholder=""
+									data-translate-placeholder="placeholderPassword"
+									value=""
+									required
+								/>
+								<img
+									class="input-icon modal-icon"
+									src="./images/form/lock.svg"
+									alt="Lock icon"
+									width="24"
+									height="24"
+								/>
+								<button
+									type="button"
+									class="toggle-password"
+									aria-label="Toggle password"
+								>
+									<img
+										class="toggle-icon"
+										src="./images/form/eye-closed.svg"
+										alt="Toggle visibility"
+										width="24"
+										height="24"
+									/>
+								</button>
+							</label>
+							<!-- Валідаційні підказки -->
+							<div class="password-hints" id="passwordHint">
+								<div class="hint-list">
+									<div class="hint-item" data-check="length">
+										<img
+											class="icon-valid"
+											src="./images/form/status_error.svg"
+											alt="status_error"
+										/>
+										<span class="text-valid" data-translate="quantityCharacter"
+											>Contain at least 6 characters</span
+										>
+									</div>
+									<div class="hint-item" data-check="uppercase">
+										<img
+											class="icon-valid"
+											src="./images/form/status_error.svg"
+											alt="status_error"
+										/>
+										<span class="text-valid" data-translate="uppercaseCharacter"
+											>Include at least 1 uppercase letter</span
+										>
+									</div>
+									<div class="hint-item" data-check="digit">
+										<img
+											class="icon-valid"
+											src="./images/form/status_error.svg"
+											alt="status_error"
+										/>
+										<span class="text-valid" data-translate="numberCharacter"
+											>Include at least 1 number</span
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<label class="modal-check modal-label">
+							<input
+								class="modal-checkbox"
+								type="checkbox"
+								name="terms"
+								required
+							/>
+							<span>
+								<span data-translate="checkbox"
+									>Ставя галочку в этом поле для регистрации на сайте,
+									пользователь подтверждает, что ему больше 18 лет, и что он
+									прочитал, понял и принял</span
+								>
+								<a
+									href="https://weiss.bet/terms-and-conditions"
+									data-translate="terms"
+									>Условия и положения</a
+								>.
+							</span>
+						</label>
+					</div>
+					<div id="captcha-container"></div>
+					<div class="modal-btn">
+						<button
+							id="submitBtn"
+							class="button modal-button"
+							type="submit"
+							data-translate="modalBtn"
+						>
+							Cоздать акаунт
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- <script src="./js/language.js" defer></script> -->
+		<script type="module" src="./js/timer.js"></script>
+	</body>
+</html>

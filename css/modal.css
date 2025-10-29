@@ -30,7 +30,7 @@
 	width: 100%;
 	max-width: 390px;
 	height: 100vh;
-	max-height: 640px;
+	max-height: 800px;
 	background: var(--color-bg);
 	position: absolute;
 	top: 50%;
@@ -81,19 +81,19 @@
 	inset: 0;
 	pointer-events: none;
 	z-index: 2;
-	background-image: url(../images/form/img_pop_mob.webp);
+	background-image: url(../images/form/dino_form.webp);
 	background-repeat: no-repeat;
-	background-size: 320px 336px;
-	background-position: top -50px right -90px;
+	background-size: contain;
+	background-position: bottom right;
 	opacity: 1;
 }
 
 @media screen and (min-width: 1024px) {
 	.modal-header::after {
-		background-image: url(../images/form/img-pop_desk.webp);
+		background-image: url(../images/form/dino_form.webp);
 		background-repeat: no-repeat;
-		background-size: 450px 450px;
-		background-position: top -100px right -110px;
+		background-size: contain;
+		background-position: bottom right;
 	}
 }
 
@@ -133,94 +133,31 @@
 .modal-titel {
 	position: relative;
 	z-index: 5;
-	margin-bottom: 18px;
 	font-family: inherit;
 	font-weight: 700;
 	font-style: normal;
-	font-size: 32px;
-	line-height: 28px;
+	font-size: 24px;
+	line-height: 96%;
 	vertical-align: bottom;
 	text-transform: uppercase;
 	position: relative;
 	display: inline-block;
-	color: transparent;
-	background: linear-gradient(
-		to bottom right,
-		rgba(255, 255, 255, 1),
-		rgba(81, 69, 117, 0.5)
+	background: radial-gradient(
+		56.41% 112.81% at 50% 0%,
+		#ff6b95 0%,
+		#e8353e 100%
 	);
 	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Для Firefox */
 	background-clip: text;
-	text-shadow: 0 0 1px white, 0 0 4px rgba(255, 255, 255, 0.8),
-		0 0 8px rgba(81, 69, 117, 0.5), 0 0 16px rgba(81, 69, 117, 0.6);
+	color: transparent;
 }
 
 @media screen and (min-width: 1024px) {
 	.modal-titel {
-		font-size: 36px;
-		line-height: 32px;
-		margin-bottom: 20px;
-	}
-}
-
-.modal-bonus-wrap {
-	position: relative;
-	z-index: 5;
-	width: 161px;
-	height: 32px;
-	border-radius: 12px;
-	border: 2px solid rgba(222, 255, 253, 1);
-	background: rgba(44, 255, 241, 0.08);
-	box-shadow: 0px 0px 24px 0px rgba(222, 255, 253, 0.25);
-	backdrop-filter: blur(16px);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-@media screen and (min-width: 1024px) {
-	.modal-bonus-wrap {
-		width: 178px;
-		height: 34px;
-	}
-}
-
-.modal-bonus {
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 16px;
-	text-transform: uppercase;
-	color: var(--color-accent-text);
-}
-
-@media screen and (min-width: 1024px) {
-	.modal-bonus {
-		font-size: 18px;
-		line-height: 18px;
-	}
-}
-
-.lang-HU [data-translate="modalBonus"],
-.lang-TR [data-translate="modalBonus"] {
-	font-size: 10px;
-}
-.lang-PT [data-translate="modalBonus"] {
-	font-size: 11px;
-}
-.lang-RU [data-translate="modalBonus"] {
-	font-size: 13px;
-}
-
-@media screen and (min-width: 1024px) {
-	.lang-HU [data-translate="modalBonus"],
-	.lang-TR [data-translate="modalBonus"] {
-		font-size: 11px;
-	}
-	.lang-PT [data-translate="modalBonus"] {
-		font-size: 13px;
-	}
-	.lang-RU [data-translate="modalBonus"] {
-		font-size: 15px;
+		font-size: 24px;
+		line-height: 96%;
 	}
 }
 
@@ -441,8 +378,8 @@ input::placeholder {
 
 .modal-button {
 	width: 100%;
-	background: radial-gradient(50% 100% at 50% 0%, #8C89FF 0%, #5B58EF 100%);
-
+	font-size: 18px;
+	line-height: 22px;
 }
 
 #submitBtn.disabled {

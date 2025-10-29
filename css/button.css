@@ -32,8 +32,7 @@
 
 @keyframes flipSpin {
   0% {
-    transform: scale(1) rotateY(0deg);
-  }
+    transform: scale(1) rotateY(0deg);  }
   50% {
     transform: scale(1.2) rotateY(180deg);
   }
@@ -46,10 +45,10 @@
 
 @media screen and (min-width: 1024px) {
 	.button-prime {
-		font-size: 36px;
+		font-size: 32px;
 		width: 542px;
 		height: 78px;
-		margin-bottom: 26px;
+		margin-bottom: 50px;
 	}
 }
 

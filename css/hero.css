@@ -184,6 +184,10 @@
 		width: 93px;
 		height: 93px;
 	}
+	.title-desk-text {
+		display: flex;
+		flex-direction: column;
+	}
 	.text {
 		font-weight: 400;
 		font-size: 37px;

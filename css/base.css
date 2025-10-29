@@ -58,7 +58,7 @@ body {
 		opacity: 1;
 		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 		background-size: contain, cover, cover, contain;
-		background-position: bottom 10% right, bottom 80% right, bottom left,
+		background-position: bottom  right, bottom 80% right, bottom left,
 			bottom right;
 	}
 }

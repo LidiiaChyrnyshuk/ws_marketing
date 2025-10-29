@@ -13,7 +13,7 @@ body {
 	background-image: url(../images/body/pattern_circle.webp);
 	opacity: 1;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	position: relative;
 	width: 100%;
@@ -25,37 +25,37 @@ body {
 	align-items: center;
 	justify-content: center;
 }
-@media screen and (max-width:1023px) {
+@media screen and (max-width: 1023px) {
 	body::after {
-	content: "";
-	position: absolute;
-	inset: 0;
-	pointer-events: none;
-	z-index: 2;
-	background-image: url(../images/body/Ellipse_mob_center.webp),
-		url(../images/body/Ellipse_mob_right.webp),
-		url(../images/body/Ellipse_mob_left.webp);
-	opacity: 1;
-	background-repeat: no-repeat, no-repeat, no-repeat;
-	background-size: cover, contain, contain;
-	background-position: center, center right, bottom left;
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 2;
+		background-image: url(../images/hero/dino-mob.webp), url(../images/body/spooky.webp), url(../images/body/Ellipse_mob_center.webp),
+			url(../images/body/Ellipse_mob_right.webp),
+			url(../images/body/Ellipse_mob_left.webp);
+		opacity: 1;
+		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+		background-size: contain, cover, cover, contain, contain;
+		background-position: right center, right center, center, center right, bottom left;
+	}
 }
-}
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
 	body::after {
-			content: "";
-	position: absolute;
-	inset: 0;
-	pointer-events: none;
-	z-index: 2;
-	background-image: url(../images/hero/dino_desk.webp),
-	 url(../images/body/spooky.webp),
-	 url(../images/body/Ellipse_desk.webp),
-	 url(../images/body/Ellipse-1_desk.webp);
-	opacity: 1;
-	background-repeat:no-repeat, no-repeat, no-repeat, no-repeat ;
-	background-size: contain, contain, cover, contain;
-	background-position:bottom right, bottom -900px right, bottom left, bottom right;
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 2;
+		background-image: url(../images/hero/dino_desk.webp),
+			url(../images/body/spooky.webp), url(../images/body/Ellipse_desk.webp),
+			url(../images/body/Ellipse-1_desk.webp);
+		opacity: 1;
+		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+		background-size: contain, contain, cover, contain;
+		background-position: bottom right, bottom -900px right, bottom left,
+			bottom right;
 	}
 }
 

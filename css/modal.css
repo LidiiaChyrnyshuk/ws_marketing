@@ -5,7 +5,7 @@
 	width: 100vw;
 	height: 100vh;
 	background-color: rgba(9, 3, 30, 0.8);
-	backdrop-filter: blur(10px);
+	backdrop-filter: blur(20px);
 	visibility: visible;
 	overflow: hidden;
 	transition-property: opacity, visibility;
@@ -382,6 +382,17 @@ input::placeholder {
 	width: 100%;
 	font-size: 18px;
 	line-height: 22px;
+	height: 56px;
+	border: 2px solid rgba(255, 255, 255, 0.16);
+	border-radius: 16px;
+	background: var(--color-bg-btn);
+	font-weight: 400;
+	color: var(--color-text);
+	cursor: pointer;
+	/* text-transform: uppercase; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #submitBtn.disabled {

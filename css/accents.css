@@ -16,36 +16,36 @@ width: 130%;
 position: absolute;
 top: 42%;
 left: 18%;
-width: 63px;
-height: 68px;
+width: /* 63px */16.15vw;
+height: /* 68px */17.43vw;
 }
 .accent2 {
   position: absolute;
   top: 45%;
   left: 0;
-  width: 122px;
-  height: 132px;
+  width: /* 122px */31.28vw;
+  height: /* 132px */33.84vw;
 }
 .accent3 {
   position: absolute;
   bottom: -1%;
   right: 0;
-  width:113px;
-  height: 123px;
+  width:/* 113px */28.97vw;
+  height: /* 123px */31.53vw;
 }
 .accent4 {
   position: absolute;
   top:35%;
   left: 12%;
-  width: 64px;
-  height: 64px;
+  width: /* 64px */16.41vw;
+  height: /* 64px */16.41vw;
 }
 .accent5 {
   position: absolute;
   bottom: 0;
   left: 3%;
-  width: 66px;
-  height: 66px;
+  width: /* 66px */16.92vw;
+  height: /* 66px */16.92vw;
 }
 .accent6 {
   display: none;
@@ -80,28 +80,28 @@ height: 68px;
   position: absolute;
   bottom: 10%;
   left: 55%;
-  width: 144px;
-  height: 156px;
+  width: /* 144px */9.47vw;
+  height: /* 156px */10.26vw;
 }
 .accent7 {
   position: absolute;
   bottom: -4%;
   left: 40%;
-  width: 289px;
-  height: 314px;
+  width: /* 289px */19.01vw;
+  height: /* 314px */20.65vw;
 }
 .accent8 {
   position: absolute;
   top: 25%;
   right: 10%;
-  width: 131px;
-  height: 143px;
+  width: /* 131px */8.61vw;
+  height: /* 143px */9.40vw;
 }
 .accent9 {
   position: absolute;
   top: 15%;
   right: 0;
-  width: 135px;
-  height: 135px;
+  width: /* 135px */8.88vw;
+  height: /* 135px */8.88vw;
 }
 }

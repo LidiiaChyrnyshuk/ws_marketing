@@ -40,7 +40,7 @@ body {
 		opacity: 1;
 		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
 			no-repeat;
-		background-size: contain, 400px 350px, cover, cover, cover, contain;
+		background-size: contain, /* 400px 350px */90.5vw 82.74vw, cover, cover, cover, contain;
 		background-position: top 75% center, right center, right center, center,
 			center right, bottom left;
 	}
@@ -74,7 +74,7 @@ body {
 			url(../images/body/Ellipse-1_desk.webp);
 		opacity: 1;
 		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-		background-size: 800px 800px, cover, cover, contain;
+		background-size: /* 880px 800px */70.89vw 58.63vw, cover, cover, contain;
 		background-position: bottom 2% right, bottom 80% right, bottom left,
 			bottom right;
 	}

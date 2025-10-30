@@ -1,35 +1,46 @@
 .button {
-	width: 342px;
-	height: 64px;
+	width: /* 342px */87.69vw;
+	height: /* 64px */16.41vw;
 	border: 2px solid rgba(255, 255, 255, 0.16);
-	border-radius: 20px;
-	padding-top: 8px;
-	padding-right: 48px;
-	padding-bottom: 8px;
-	padding-left: 48px;
+	border-radius: /* 16px */4.10vw;
+
 	background: var(--color-bg-btn);
 	font-weight: 400;
-	font-size: 24px;
-	line-height: 24px;
+	font-size: /* 24px */6.15vw;
+	line-height: /* 24px */6.15vw;
 	color: var(--color-text);
 	cursor: pointer;
 	/* text-transform: uppercase; */
 	display: flex;
-	gap: 20px;
+	gap: /* 20px */5.12vw;
 	align-items: center;
 	justify-content: center;
 }
-
 .button-prime {
-	margin-bottom: 26px;
+	margin-bottom: /* 26px */6.66vw;
 	animation: pulse 2.5s ease-in-out infinite;
 	transition: transform 0.2s;
 }
 .button-img {
-	width: 32px;
-	height: 32px;
+	width: /* 32px */8.20vw;
+	height: /* 32px */8.20vw;
 	animation: flipSpin 2s ease-in-out infinite;
 	transform-style: preserve-3d;
+}
+@media screen and (min-width: 1024px) {
+	.button-prime {
+		font-size: /* 32px */2.10vw;
+		line-height: /* 24px */1.57vw;
+		width: /* 446px */29.34vw;
+		height: /* 78px */5.13vw;
+		border-radius: /* 16px */1.05vw;
+		gap: /* 20px */1.31vw;
+		margin-bottom: /* 50px */3.28vw;
+	}
+	.button-img {
+		width: /* 48px */3.15vw;
+		height: /* 48px */3.15vw;
+	}
 }
 
 @keyframes flipSpin {
@@ -58,11 +69,4 @@
 	}
 }
 
-@media screen and (min-width: 1024px) {
-	.button-prime {
-		font-size: 32px;
-		width: 446px;
-		height: 78px;
-		margin-bottom: 50px;
-	}
-}
+

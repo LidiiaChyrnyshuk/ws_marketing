@@ -44,23 +44,6 @@ body {
 		background-position: top 75% center, right center, right center, center,
 			center right, bottom left;
 	}
-	/* 	body::after {
-		content: "";
-		position: absolute;
-		inset: 0;
-		pointer-events: none;
-		z-index: 2;
-		background-image:url(../images/body/rectangle.webp), url(../images/hero/dino_group.webp),
-			url(../images/body/spooky.webp),
-			url(../images/body/Ellipse_mob_center.webp),
-			url(../images/body/Ellipse_mob_right.webp),
-			url(../images/body/Ellipse_mob_left.webp);
-		opacity: 1;
-		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-		background-size:contain, contain, cover, cover, cover, contain;
-		background-position:top 80% center, top 50% right -150px, right center, center,
-			center right, bottom left;
-	} */
 }
 @media screen and (min-width: 1024px) {
 	body::after {

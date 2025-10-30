@@ -33,7 +33,7 @@
 		justify-content: start;
 	}
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1690px) {
 	.hero {
 		max-width: 2400px;
 	}

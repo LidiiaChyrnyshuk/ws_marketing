@@ -22,6 +22,7 @@
 	background-clip: text;
 	color: transparent;
 }
+
 .lang-HU [data-translate="titelPath1"],
 .lang-HU [data-translate="titelPath2"],
 .lang-CZ [data-translate="titelPath1"],
@@ -39,4 +40,10 @@
 .lang-CA [data-translate="modalTitlePath3"]
  {
 line-height: 1.3;
+}
+
+.lang-CA [data-translate="modalTitlePath1"],
+.lang-CA [data-translate="modalTitlePath2"],
+.lang-CA [data-translate="modalTitlePath3"] {
+	font-size: 18px;
 }

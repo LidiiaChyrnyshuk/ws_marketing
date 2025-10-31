@@ -31,7 +31,12 @@
 .lang-HU [data-translate="modalTitlePath3"],
 .lang-CZ [data-translate="modalTitlePath1"],
 .lang-CZ [data-translate="modalTitlePath2"],
-.lang-CZ [data-translate="modalTitlePath"]
+.lang-CZ [data-translate="modalTitlePath3"],
+.lang-CA [data-translate="titelPath1"],
+.lang-CA [data-translate="titelPath2"],
+.lang-CA [data-translate="modalTitlePath1"],
+.lang-CA [data-translate="modalTitlePath2"],
+.lang-CA [data-translate="modalTitlePath3"]
  {
 line-height: 1.3;
 }

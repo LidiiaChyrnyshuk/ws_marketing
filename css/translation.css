@@ -1,0 +1,24 @@
+.lang-HU [data-translate="discriptionPath2"] {
+  background: radial-gradient(
+		56.41% 112.81% at 50% 0%,
+		#ff6b95 0%,
+		#e8353e 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Для Firefox */
+	background-clip: text;
+	color: transparent;
+}
+.lang-HU [data-translate="discriptionPath3"] {
+  background: radial-gradient(
+		56.41% 112.81% at 50% 0%,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(255, 255, 255, 1) 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* Для Firefox */
+	background-clip: text;
+	color: transparent;
+}

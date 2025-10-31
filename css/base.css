@@ -33,7 +33,8 @@ body {
 		pointer-events: none;
 		z-index: 2;
 		background-image: url(../images/body/rectangle.webp),
-			url(../images/hero/dino-mob.webp), url(../images/body/spooky.webp),
+			url(../images/hero/dino-mob.webp),
+			 url(../images/body/spooky.webp),
 			url(../images/body/Ellipse_mob_center.webp),
 			url(../images/body/Ellipse_mob_right.webp),
 			url(../images/body/Ellipse_mob_left.webp);
@@ -41,7 +42,7 @@ body {
 		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
 			no-repeat;
 		background-size: contain, /* 400px 350px */90.5vw 82.74vw, cover, cover, cover, contain;
-		background-position: top 75% center, right center, right center, center,
+		background-position: top 68% center, right top 42%, right center, center,
 			center right, bottom left;
 	}
 }

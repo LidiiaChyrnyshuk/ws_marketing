@@ -142,11 +142,7 @@
 	text-transform: uppercase;
 	position: relative;
 	display: inline-block;
-	background: radial-gradient(
-		56.41% 112.81% at 50% 0%,
-		#ff6b95 0%,
-		#e8353e 100%
-	);
+	background: linear-gradient(180deg, #ff9095 0%, #ff4b54 104.3%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	/* Для Firefox */
@@ -158,8 +154,7 @@
 
 @media screen and (min-width: 1024px) {
 	.modal-titel {
-		font-size: 24px;
-		line-height: 96%;
+		font-size: 30px;
 	}
 }
 

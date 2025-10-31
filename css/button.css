@@ -6,7 +6,7 @@
 
 	background: var(--color-bg-btn);
 	font-weight: 400;
-	font-size: /* 24px */6.15vw;
+	font-size: /* 18px */4.61vw;
 	line-height: /* 24px */6.15vw;
 	color: var(--color-text);
 	cursor: pointer;
@@ -22,24 +22,24 @@
 	transition: transform 0.2s;
 }
 .button-img {
-	width: /* 32px */8.20vw;
-	height: /* 32px */8.20vw;
+	width: /* 24px */6.15vw;
+	height: /* 24px */6.15vw;
 	animation: flipSpin 2s ease-in-out infinite;
 	transform-style: preserve-3d;
 }
 @media screen and (min-width: 1024px) {
 	.button-prime {
-		font-size: /* 32px */2.10vw;
+		font-size: /* 24px */1.57vw;
 		line-height: /* 24px */1.57vw;
-		width: /* 446px */29.34vw;
-		height: /* 78px */5.13vw;
+		width: /* 440px */28.94vw;
+		height: /* 64px */4.21vw;
 		border-radius: /* 16px */1.05vw;
 		gap: /* 20px */1.31vw;
 		margin-bottom: /* 50px */3.28vw;
 	}
 	.button-img {
-		width: /* 48px */3.15vw;
-		height: /* 48px */3.15vw;
+		width: /* 32px */2.11vw;
+		height: /* 32px */2.11vw;
 	}
 }
 

@@ -22,3 +22,16 @@
 	background-clip: text;
 	color: transparent;
 }
+.lang-HU [data-translate="titelPath1"],
+.lang-HU [data-translate="titelPath2"],
+.lang-CZ [data-translate="titelPath1"],
+.lang-CZ [data-translate="titelPath2"],
+.lang-HU [data-translate="modalTitlePath1"],
+.lang-HU [data-translate="modalTitlePath2"],
+.lang-HU [data-translate="modalTitlePath3"],
+.lang-CZ [data-translate="modalTitlePath1"],
+.lang-CZ [data-translate="modalTitlePath2"],
+.lang-CZ [data-translate="modalTitlePath"]
+ {
+line-height: 1.3;
+}

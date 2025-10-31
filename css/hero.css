@@ -33,7 +33,7 @@
 		justify-content: start;
 	}
 }
-@media screen and (min-width: 1690px) {
+@media screen and (min-width: 1620px) {
 	.hero {
 		max-width: 2400px;
 	}
@@ -46,11 +46,7 @@
 	line-height: 1;
 	text-align: center;
 	text-transform: uppercase;
-	background: radial-gradient(
-		56.41% 112.81% at 50% 0%,
-		#ff6b95 0%,
-		#e8353e 100%
-	);
+	background: linear-gradient(180deg, #FF9095 0%, #FF4B54 104.3%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	/* Для Firefox */
@@ -177,14 +173,10 @@
 	.title-desk {
 		font-weight: 700;
 		font-style: normal;
-		font-size: /* 58px */3.81vw;
-		line-height: 96%;
+		font-size: /* 48px */3.15vw;
+		line-height: 1;
 		text-transform: uppercase;
-		background: radial-gradient(
-			56.41% 112.81% at 50% 0%,
-			#ff6b95 0%,
-			#e8353e 100%
-		);
+		background: linear-gradient(180deg, #FF9095 0%, #FF4B54 104.3%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		/* Для Firefox */
@@ -195,6 +187,7 @@
 		align-items: center;
 				margin-bottom: /* 40px */2.63vw;
 	}
+
 	.title-desk-icon {
 		width: /* 93px */6.11vw;
 		height: /* 93px */6.11vw;
@@ -228,7 +221,7 @@
 		height: /* 38px */2.5vw;
 	}
 	.text-discription {
-		font-size: /* 46px */3.02vw;
+		font-size: /* 40px */2.63vw;
 		align-items: flex-start;
 		margin-bottom: /* 189px */12.43vw;
 	}

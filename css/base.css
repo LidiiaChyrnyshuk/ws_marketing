@@ -33,15 +33,15 @@ body {
 		pointer-events: none;
 		z-index: 2;
 		background-image: url(../images/body/rectangle.webp),
-			url(../images/hero/dino-mob.webp),
-			 url(../images/body/spooky.webp),
+			url(../images/hero/dino-mob.webp), url(../images/body/spooky.webp),
 			url(../images/body/Ellipse_mob_center.webp),
 			url(../images/body/Ellipse_mob_right.webp),
 			url(../images/body/Ellipse_mob_left.webp);
 		opacity: 1;
 		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
 			no-repeat;
-		background-size: contain, /* 400px 350px */90.5vw 82.74vw, cover, cover, cover, contain;
+		background-size: contain, /* 400px 350px */ 90.5vw 82.74vw, cover, cover,
+			cover, contain;
 		background-position: top 68% center, right top 42%, right center, center,
 			center right, bottom left;
 	}
@@ -58,8 +58,26 @@ body {
 			url(../images/body/Ellipse-1_desk.webp);
 		opacity: 1;
 		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-		background-size: /* 880px 800px */70.89vw 58.63vw, cover, cover, contain;
-		background-position: bottom 2% right, bottom 80% right, bottom left,
+		background-size: /* 880px 800px */ 57.89vw 52.63vw, cover, cover, contain;
+		background-position: bottom right, bottom 80% right, bottom left,
+			bottom right;
+	}
+}
+
+@media screen and (min-width: 1620px) {
+		body::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		z-index: 2;
+		background-image: url(../images/hero/dino_desk.webp),
+			url(../images/body/spooky.webp), url(../images/body/Ellipse_desk.webp),
+			url(../images/body/Ellipse-1_desk.webp);
+		opacity: 1;
+		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+		background-size: /* 880px 800px */ 56.66vw 53.33vw, cover, cover, contain;
+		background-position: bottom right, bottom 80% right, bottom left,
 			bottom right;
 	}
 }

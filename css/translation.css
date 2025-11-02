@@ -1,5 +1,5 @@
 .lang-HU [data-translate="discriptionPath2"] {
-  background: radial-gradient(
+	background: radial-gradient(
 		56.41% 112.81% at 50% 0%,
 		#ff6b95 0%,
 		#e8353e 100%
@@ -11,7 +11,7 @@
 	color: transparent;
 }
 .lang-HU [data-translate="discriptionPath3"] {
-  background: radial-gradient(
+	background: radial-gradient(
 		56.41% 112.81% at 50% 0%,
 		rgba(255, 255, 255, 1) 0%,
 		rgba(255, 255, 255, 1) 100%
@@ -37,8 +37,21 @@
 .lang-CA [data-translate="titelPath2"],
 .lang-CA [data-translate="modalTitlePath1"],
 .lang-CA [data-translate="modalTitlePath2"],
-.lang-CA [data-translate="modalTitlePath3"]
- {
-line-height: 1.2;
+.lang-CA [data-translate="modalTitlePath3"] {
+	line-height: 1.2;
 }
 
+@media screen and (max-width: 1023px) {
+	.lang-CA [data-translate="titelPath1"],
+	.lang-CA [data-translate="titelPath2"] {
+		font-size: /* 18px */ 4.61vw;
+	}
+	.lang-HU [data-translate="titelPath1"],
+	.lang-HU [data-translate="titelPath2"],
+	.lang-CZ [data-translate="titelPath1"],
+	.lang-CZ [data-translate="titelPath2"],
+	.lang-RU [data-translate="titelPath1"],
+	.lang-RU [data-translate="titelPath2"] {
+		font-size: /* 20px */5.12vw;
+	}
+}

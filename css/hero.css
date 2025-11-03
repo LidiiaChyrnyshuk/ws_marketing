@@ -120,7 +120,7 @@
 .time-part {
 	font-family: "SpaceGrotesk";
 	font-weight: 700;
-	font-style: normal;
+	font-style: bold;
 	font-size: /* 42px */10.76vw;
 	line-height: /* 120px */30.76vw;
 	color: var(--color-text);
@@ -215,6 +215,7 @@
 	}
 	.time-part {
 		font-size: /* 66px */4.34vw;
+		line-height: /* 120px */7.89vw;
 	}
 	.colon {
 		width: /* 8px */0.52vw;

@@ -10,11 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	const secondsEl = document.getElementById("seconds");
 
 	// === Ключові дати ===
-/* 	const startDate = new Date(2025, 10, 11, 0, 0, 0); 
-	const endDate = new Date(2025, 10, 11, 23, 59, 59); */
-
-	const startDate = new Date(2025, 9, 30, 0, 0, 0); // 30 жовтня 2025 00:00
-	const endDate = new Date(2025, 9, 30, 23, 59, 59); // 30 жовтня 2025 23:59:59
+	const startDate = new Date(2025, 10, 11, 0, 0, 0); 
+	const endDate = new Date(2025, 10, 11, 23, 59, 59);
 
 	const interval = setInterval(() => {
 		const now = new Date();

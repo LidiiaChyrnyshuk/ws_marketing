@@ -3,9 +3,9 @@
 	width: 100%;
 	max-width: 1520px;
 	min-height: 100dvh;
-	padding-left: /* 24px */6.15vw;
-	padding-top: /* 24px */6.15vw;
-	padding-right: /* 24px */6.15vw;
+	padding-left: /* 24px */ 6.15vw;
+	padding-top: /* 24px */ 6.15vw;
+	padding-right: /* 24px */ 6.15vw;
 	padding-bottom: 0;
 	z-index: 3;
 	display: flex;
@@ -22,9 +22,9 @@
 		position: relative;
 		width: 100%;
 		max-width: 1520px;
-		padding-left: /* 160px */10.52vw;
-		padding-top: /* 60px */3.94vw;
-		padding-right: /* 160px */10.52vw;
+		padding-left: /* 160px */ 10.52vw;
+		padding-top: /* 60px */ 3.94vw;
+		padding-right: /* 160px */ 10.52vw;
 		padding-bottom: 0;
 		z-index: 3;
 		display: flex;
@@ -42,11 +42,11 @@
 	font-family: inherit;
 	font-weight: 700;
 	font-style: normal;
-	font-size: /* 30px */7.69vw;
+	font-size: /* 30px */ 7.69vw;
 	line-height: 1;
 	text-align: center;
 	text-transform: uppercase;
-	background: linear-gradient(180deg, #FF9095 0%, #FF4B54 104.3%);
+	background: linear-gradient(180deg, #ff9095 0%, #ff4b54 104.3%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	/* Для Firefox */
@@ -56,7 +56,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: /* 200px */51.28vw;
+	margin-bottom: /* 200px */ 51.28vw;
 }
 
 .title-mob-accent {
@@ -66,8 +66,8 @@
 	align-items: baseline;
 }
 .title-icon {
-	width: /* 20px */5.12vw;
-	height: /* 20px */5.12vw;
+	width: /* 20px */ 5.12vw;
+	height: /* 20px */ 5.12vw;
 }
 .title-desk {
 	display: none;
@@ -77,7 +77,7 @@
 	font-family: Stolzl;
 	font-weight: 700;
 	font-style: normal;
-	font-size: /* 18px */4.61vw;
+	font-size: /* 18px */ 4.61vw;
 	line-height: 120%;
 	letter-spacing: 0%;
 	text-align: center;
@@ -85,7 +85,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: /* 200px */51.28vw;
+	margin-bottom: /* 200px */ 51.28vw;
 }
 .subtext {
 	font-weight: 400;
@@ -94,8 +94,8 @@
 .timer-wrap {
 	position: relative;
 	z-index: 10;
-	width: /* 276px */71.76vw;
-	height: /* 150px */38.46vw;
+	width: /* 276px */ 71.76vw;
+	height: /* 150px */ 39.46vw;
 	background-image: url(../images/hero/timerBG.webp);
 	opacity: 1;
 	background-repeat: no-repeat;
@@ -104,49 +104,68 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: /* 10px */2.56vw;
+	margin-bottom: /* 10px */ 2.56vw;
 }
 
 .timer {
-	width: /* 256px */65.64vw;
-	height: /* 80px */20.51vw;
+	width: /* 256px */ 65.64vw;
+	height: /* 80px */ 20.51vw;
 	display: flex;
-	gap: /* 4px */1.02vw;
+	gap: /* 4px */ 1.02vw;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: /* 10px */2.56vw;
+	margin-bottom: /* 10px */ 2.56vw;
+}
+
+.time {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .time-part {
 	font-family: "SpaceGrotesk";
 	font-weight: 700;
 	font-style: bold;
-	font-size: /* 42px */10.76vw;
-	line-height: /* 120px */30.76vw;
-	color: var(--color-text);
+	font-size: /* 42px */ 10.76vw;
+	line-height: 100%;
+	color: rgba(227, 207, 255, 1);
 	font-feature-settings: "tnum";
 	font-variant-numeric: tabular-nums;
 }
-#seconds {
-	color: rgba(255, 107, 149, 1);
+#minutes {
+	color: rgba(255, 66, 85, 1);
+}
+.time-label {
+	font-family: "SpaceGrotesk";
+	font-weight: 700;
+	font-style: bold;
+	font-size: /* 10px */ 2.56vw;
+	line-height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	color: rgba(227, 207, 255, 0.6);
 }
 
 .colon {
-	width: /* 5px */1.25vw;
-	height: /* 25px */6.41vw;
+	width: /* 5px */ 1.25vw;
+	height: /* 25px */ 6.41vw;
+	transform: translateY(-1.02vw);
 }
 
 .text-discription {
 	font-weight: 700;
 	font-style: normal;
-	font-size: /* 18px */4.61vw;
+	font-size: /* 18px */ 4.61vw;
 	line-height: 110%;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: /* 28px */7.17vw;
+	margin-bottom: /* 28px */ 7.17vw;
 }
 
 .text-discription-second {
@@ -173,10 +192,10 @@
 	.title-desk {
 		font-weight: 700;
 		font-style: normal;
-		font-size: /* 48px */3.15vw;
+		font-size: /* 48px */ 3.15vw;
 		line-height: 1;
 		text-transform: uppercase;
-		background: linear-gradient(180deg, #FF9095 0%, #FF4B54 104.3%);
+		background: linear-gradient(180deg, #ff9095 0%, #ff4b54 104.3%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		/* Для Firefox */
@@ -185,12 +204,12 @@
 		display: flex;
 		justify-content: baseline;
 		align-items: center;
-				margin-bottom: /* 40px */2.63vw;
+		margin-bottom: /* 40px */ 2.63vw;
 	}
 
 	.title-desk-icon {
-		width: /* 93px */6.11vw;
-		height: /* 93px */6.11vw;
+		width: /* 93px */ 6.11vw;
+		height: /* 93px */ 6.11vw;
 	}
 	.title-desk-text {
 		display: flex;
@@ -198,35 +217,49 @@
 	}
 	.text {
 		font-weight: 400;
-		font-size: /* 37px */2.43vw;
+		font-size: /* 37px */ 2.43vw;
 		align-items: flex-start;
-		margin-bottom: /* 40px */2.63vw;
+		margin-bottom: /* 40px */ 2.63vw;
 	}
 	.timer-wrap {
-		width: /* 446px */29.34vw;
-		height: /* 250px */16.44vw;
-		margin-bottom: /* 20px */1.31vw;
+		width: /* 532px */ 35vw;
+		height: /* 293px */ 19.27vw;
+		margin-bottom: /* 20px */ 1.31vw;
 	}
 	.timer {
-		width: /* 403px */26.51vw;
-		height: /* 96px */6.31vw;
-		gap: /* 12px */0.78vw;
+		width: /* 374px */ 24.60vw;
+		height: /* 103px */ 6.77vw;
+		gap: /* 12px */ 0.78vw;
 		margin-bottom: 0;
 	}
 	.time-part {
-		font-size: /* 66px */4.34vw;
-		line-height: /* 120px */7.89vw;
+		font-size: /* 66px */ 4.34vw;
+		line-height: 100%;
+	}
+	.time-label {
+		font-size: /* 24px */ 1.57vw;
+		line-height: 100%;
 	}
 	.colon {
-		width: /* 8px */0.52vw;
-		height: /* 38px */2.5vw;
+		width: /* 8px */ 0.52vw;
+		height: /* 38px */ 2.5vw;
+		transform: translateY(-0.52vw);
 	}
 	.text-discription {
-		font-size: /* 40px */2.63vw;
+		font-size: /* 40px */ 2.63vw;
 		align-items: flex-start;
-		margin-bottom: /* 189px */12.43vw;
+		margin-bottom: /* 189px */ 12.43vw;
 	}
 	.text-discription-second {
 		font-weight: 500;
+	}
+}
+.colon img {
+	animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+	50% {
+		opacity: 0.1;
 	}
 }

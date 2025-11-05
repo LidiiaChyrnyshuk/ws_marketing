@@ -5,41 +5,34 @@ document.addEventListener("DOMContentLoaded", () => {
 		return num.toString().padStart(digits, "0");
 	}
 
+	const daysEl = document.getElementById("days");
 	const hoursEl = document.getElementById("hours");
 	const minutesEl = document.getElementById("minutes");
-	const secondsEl = document.getElementById("seconds");
 
-	// === Ключові дати ===
-	const startDate = new Date(2025, 10, 11, 0, 0, 0); 
-	const endDate = new Date(2025, 10, 11, 23, 59, 59);
+	const targetDate = new Date(2025, 10, 11, 0, 0, 0); // 11 листопада 2025, 00:00:00
 
-	const interval = setInterval(() => {
+	function updateTimer() {
 		const now = new Date();
+		const timeLeft = targetDate - now;
 
-		if (now < startDate) {
-			hoursEl.textContent = "00";
-			minutesEl.textContent = "00";
-			secondsEl.textContent = "00";
-			return;
-		}
-
-		if (now >= endDate) {
+		if (timeLeft <= 0) {
 			clearInterval(interval);
+			daysEl.textContent = "00";
 			hoursEl.textContent = "00";
 			minutesEl.textContent = "00";
-			secondsEl.textContent = "00";
 			openModal();
 			return;
 		}
 
-		const timeLeft = endDate - now;
-
+		const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
 		const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
 		const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
-		const seconds = Math.floor((timeLeft / 1000) % 60);
 
+		daysEl.textContent = addZero(days);
 		hoursEl.textContent = addZero(hours);
 		minutesEl.textContent = addZero(minutes);
-		secondsEl.textContent = addZero(seconds);
-	}, 1000);
+	}
+
+	updateTimer(); // оновлюємо одразу при завантаженні
+	const interval = setInterval(updateTimer, 1000); // оновлення раз на секунду
 });

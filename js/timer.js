@@ -8,10 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	const daysEl = document.getElementById("days");
 	const hoursEl = document.getElementById("hours");
 	const minutesEl = document.getElementById("minutes");
-
 	const colons = document.querySelectorAll(".colon img");
 
 	const targetDate = new Date(2025, 10, 11, 0, 0, 0);
+
+	let interval;
 
 	function updateTimer() {
 		const now = new Date();
@@ -23,13 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
 			hoursEl.textContent = "00";
 			minutesEl.textContent = "00";
 
-			// 🔹 Зупиняємо миготіння двокрапок
 			colons.forEach((colon) => {
-				colon.style.animation = "none"; // вимикаємо CSS-анімацію
-				colon.style.opacity = "1"; // ставимо видимі двокрапки
+				colon.style.animation = "none";
+				colon.style.opacity = "1";
 			});
 
-			openModal(); 
+			openModal();
 			return;
 		}
 
@@ -43,5 +43,5 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 
 	updateTimer();
-	const interval = setInterval(updateTimer, 1000);
+	interval = setInterval(updateTimer, 1000); 
 });

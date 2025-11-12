@@ -1,28 +1,3 @@
-.lang-HU [data-translate="discriptionPath2"] {
-	background: radial-gradient(
-		56.41% 112.81% at 50% 0%,
-		#ff6b95 0%,
-		#e8353e 100%
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	/* Для Firefox */
-	background-clip: text;
-	color: transparent;
-}
-.lang-HU [data-translate="discriptionPath3"] {
-	background: radial-gradient(
-		56.41% 112.81% at 50% 0%,
-		rgba(255, 255, 255, 1) 0%,
-		rgba(255, 255, 255, 1) 100%
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	/* Для Firefox */
-	background-clip: text;
-	color: transparent;
-}
-
 .lang-HU [data-translate="titelPath1"],
 .lang-HU [data-translate="titelPath2"],
 .lang-CZ [data-translate="titelPath1"],
@@ -42,16 +17,24 @@
 }
 
 @media screen and (max-width: 1023px) {
-	.lang-CA [data-translate="titelPath1"],
-	.lang-CA [data-translate="titelPath2"] {
-		font-size: /* 18px */ 4.61vw;
-	}
-	.lang-HU [data-translate="titelPath1"],
-	.lang-HU [data-translate="titelPath2"],
+	.lang-PT [data-translate="titelPath1"],
 	.lang-CZ [data-translate="titelPath1"],
+	
+	.lang-CA [data-translate="titelPath1"] {
+		font-size:/* 24px */ 6.15vw;
+	}
+.lang-RU [data-translate="titelPath1"] {
+	font-size: /* 20px */5.12vw;
+}
+	.lang-PT [data-translate="titelPath2"],
 	.lang-CZ [data-translate="titelPath2"],
-	.lang-RU [data-translate="titelPath1"],
 	.lang-RU [data-translate="titelPath2"] {
-		font-size: /* 20px */5.12vw;
+		font-size:/* 18px */4.61vw;
+	}
+	.lang-CA [data-translate="titelPath2"] {
+		font-size:/* 16px */4.10vw;
+	}
+	.lang-HU [data-translate="discriptionPath1"] {
+		font-size:/* 22px */5.64vw;
 	}
 }

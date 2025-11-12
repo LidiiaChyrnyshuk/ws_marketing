@@ -10,7 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	const minutesEl = document.getElementById("minutes");
 	const colons = document.querySelectorAll(".colon img");
 
-	const targetDate = new Date(2025, 10, 11, 0, 0, 0);
+	const targetDate = new Date(Date.UTC(2025, 11, 15, 23, 59, 0));
+
 
 	let interval;
 

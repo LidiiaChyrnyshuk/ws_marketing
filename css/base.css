@@ -58,25 +58,7 @@ body {
 			url(../images/body/Ellipse-1_desk.webp);
 		opacity: 1;
 		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-		background-size: /* 880px 800px */ 57.89vw 52.63vw, cover, cover, contain;
-		background-position: bottom right, bottom 80% right, bottom left,
-			bottom right;
-	}
-}
-
-@media screen and (min-width: 1620px) {
-		body::after {
-		content: "";
-		position: absolute;
-		inset: 0;
-		pointer-events: none;
-		z-index: 2;
-		background-image: url(../images/hero/dino_desk.webp),
-			url(../images/body/spooky.webp), url(../images/body/Ellipse_desk.webp),
-			url(../images/body/Ellipse-1_desk.webp);
-		opacity: 1;
-		background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-		background-size: /* 880px 800px */ 56.66vw 53.33vw, cover, cover, contain;
+		background-size: /* 880px 800px */ 65vw 55vw, cover, cover, contain;
 		background-position: bottom right, bottom 80% right, bottom left,
 			bottom right;
 	}

@@ -8,6 +8,10 @@
 .lang-CZ [data-translate="modalTitlePath1"],
 .lang-CZ [data-translate="modalTitlePath2"],
 .lang-CZ [data-translate="modalTitlePath3"],
+.lang-CZ [data-translate="discriptionPath1"],
+.lang-CZ [data-translate="discriptionPath3"],
+.lang-RU [data-translate="discriptionPath1"],
+.lang-RU [data-translate="discriptionPath3"],
 .lang-CA [data-translate="titelPath1"],
 .lang-CA [data-translate="titelPath2"],
 .lang-CA [data-translate="modalTitlePath1"],
@@ -17,24 +21,7 @@
 }
 
 @media screen and (max-width: 1023px) {
-	.lang-PT [data-translate="titelPath1"],
-	.lang-CZ [data-translate="titelPath1"],
-	
-	.lang-CA [data-translate="titelPath1"] {
-		font-size:/* 24px */ 6.15vw;
-	}
-.lang-RU [data-translate="titelPath1"] {
-	font-size: /* 20px */5.12vw;
-}
-	.lang-PT [data-translate="titelPath2"],
-	.lang-CZ [data-translate="titelPath2"],
-	.lang-RU [data-translate="titelPath2"] {
-		font-size:/* 18px */4.61vw;
-	}
-	.lang-CA [data-translate="titelPath2"] {
-		font-size:/* 16px */4.10vw;
-	}
-	.lang-HU [data-translate="discriptionPath1"] {
+	.lang-CA [data-translate="discriptionPath1"] {
 		font-size:/* 22px */5.64vw;
 	}
 }

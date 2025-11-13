@@ -42,7 +42,7 @@ body {
 			no-repeat;
 		background-size: contain, /* 400px 350px */ 90.5vw 82.74vw, cover, cover,
 			cover, contain;
-		background-position: top 68% center, right top 42%, right center, center,
+		background-position: top 68% center, right top 38%, right center, center,
 			center right, bottom left;
 	}
 }

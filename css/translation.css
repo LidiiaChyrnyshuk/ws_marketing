@@ -24,4 +24,9 @@
 	.lang-CA [data-translate="discriptionPath1"] {
 		font-size:/* 22px */5.64vw;
 	}
+		.lang-RU .button {
+		gap: 0;
+		padding-left: /* 40px */10.25vw;
+		padding-right: /* 20px */5.12vw;
+	}
 }
